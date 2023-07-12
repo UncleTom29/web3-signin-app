@@ -10,11 +10,11 @@ Implementing SIWE only takes four steps:
 4. Add validated SIWE fields to session (via JWT, cookie, etc.)
 
 # Connect Wallet
-Step 1: Configuring Connectors
+# Step 1: Configuring Connectors
 First, we create a new wagmi config set up with the Injected (i.e. MetaMask), WalletConnect, and Coinbase Wallet connectors. This project uses the Ethereum Mainnet chain (mainnet) from wagmi, however, you can also pass in any EVM-compatible chain.
-Step 2: Display Wallet Options
+# Step 2: Display Wallet Options
 Now that our connectors are set up, we want users to be able to choose a connector to connect their wallets using useConnect.
-Step 3: Display Connected Account
+# Step 3: Display Connected Account
 Lastly, if an account is connected, we want to show some basic information, like the connected address and ENS name and avatar. We can display the connected account with useAccount and add a button for signing out with useDisconnect.
 
 # Add API routes
